@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录页</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="./image/icon.ico">
+</head>
+<body>
+    <div class="a1">
+        <h1>用户登录</h1>
+        <form action="../index.html" method="post" onsubmit="return check2();">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="email">用户名：</label></td>
+                        <td class="r1"><input class="r2" type="text" name="email" id="email" /><span>@163.com</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pwd">密码：</label></td>
+                        <td><input type="password" name="pwd" id="pwd" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repwd">确认密码：</label></td>
+                        <td><input type="password" name="repwd" id="repwd" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <input type="submit" value="登录">
+                <input type="reset" value="重填">
+            </p>
+            <p>
+                <a class="register" href="./register.html">未有账户，点此注册</a>
+            </p>
+            <p>
+                <a class="home" href="../index.html">回到首页</a>
+            </p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

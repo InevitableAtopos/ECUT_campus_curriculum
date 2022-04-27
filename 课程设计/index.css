@@ -1,0 +1,533 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    min-width: 1518px;
+    margin: 0 auto;
+}
+.container{
+    width: 1518px;
+    float: left;
+    width: 100%;
+    background: url(./image/content_background.jpg);
+    height: auto;
+}
+
+
+
+/* 顶部 */
+.top{
+    width: 1518px;
+    height: 120px;
+    background: url(./image/logo.png) no-repeat 80px 15px;
+    background: url(./image/top_ecut.png);
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.top .sitelogo{
+    width: 317px;
+    height: 80px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.top .menu{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 45px;
+    right: 20px;
+}
+.top .menu li a{
+    text-decoration: none;
+    width: 120px;
+    float: right;
+    color: white;
+    background-color: rgb(100, 100, 227);
+    font-size:18px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.top .menu li a:hover{
+    background-color: rgb(152, 195, 244);
+}
+
+/* 头部 */
+.header h1{
+    text-indent: -9999px;
+}
+.header{
+    width: 1518px;
+    height: 90px;
+    background: url(./image/logo.png) no-repeat 75px 15px;
+    background-color:rgb(142, 207, 244);
+    text-align: center;
+    /*实现导航栏的水平居中*/
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+/*菜单栏*/
+.menu{
+    list-style: none;
+    text-decoration: none;
+}
+.menu li a{
+    text-decoration: none;
+    width: 80px;
+    float: right;
+    color: white;
+    font-size:15px;
+    padding: 5px;
+}
+/*首页*/
+.menu li .a1{
+    margin-right: 60px;
+    font-size: 20px;
+    background-color: rgb(245, 167, 167);
+    border-radius: 5px;
+}
+.menu li .a1:hover{
+    background-color: rgb(10, 78, 179);
+}
+/*导航栏*/
+.nav1 a{
+    text-decoration: none;
+    width: 80px;
+    float: right;
+    color: white;
+    font-size:15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.menu .nav1 .cont{
+    font-size: 20px;
+    background-color: rgb(245, 167, 167)
+}
+.menu .nav1 .cont:hover{
+    background-color: rgb(130, 124, 116);
+}
+.nav1{
+    margin-left: 360px;
+    position: relative;
+    display: inline-block;
+}
+.nav2 {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+.nav2 a{
+    color: black;
+    width: 80px;
+    height: 30px;
+    display: block;
+    padding-top: 14px;
+}
+.nav2 a:hover {
+    background-color: rgb(10, 78, 179);
+}
+.nav1:hover .nav2 {
+    display: block;
+}
+/*搜索图标*/
+.menu li .a2{
+    width: 40px;
+    background-color: rgb(245, 167, 167);
+    border-radius: 100px;
+}
+.menu li .a2 .a22{
+    cursor: pointer;
+    font-size: 25px;
+    color: transparent;
+    background: url(./image/32aac580.png) no-repeat 8px 2px;
+    border-style: none;
+}
+.menu li .a2:hover{
+    background-color: rgb(10, 78, 179);
+}
+/*搜索栏*/
+.menu li .a3{
+    margin-right: 260px;
+    padding: 0px;
+}
+.menu li .a3 .a33{
+    height: 34px;
+    width: 260px;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 5px;
+}
+.menu li .a3 .a33:hover{
+    background:whitesmoke;
+}
+
+/*用户中心*/
+.menu li .a4{
+    width: 100px;
+    margin-right: 70px;
+    margin-top: -4px;
+}
+.menu li .a4 .a44{
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 36px;
+    font-size: 20px;
+    background-color: rgb(245, 167, 167);
+    cursor: pointer;
+}
+.menu li .a4 .a44:hover{
+    border-radius: 5px;
+    background-color: rgb(10, 78, 179);
+}
+
+/*登录/注册*/
+.menu li .a5{
+    border-radius: 5px;
+    width: 100px;
+    margin-right: 60px;
+    font-size: 20px;
+    background-color: rgb(245, 167, 167);
+}
+.menu li .a5:hover{
+    background-color: rgb(10, 78, 179);
+}
+
+.content{
+    
+}
+
+/* 内容1 */
+.content1{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+}
+.rotate{
+    width: 850px;
+	height: 500px;
+    overflow: hidden;
+    float: left;
+}
+.rotate_01{
+    width: 3400px;
+    height: 500px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.rotate_image{
+    width: 850px;
+	height:500px;
+    float: left;
+}
+.rotate_image_trigger {
+    padding-top: 10px;
+    text-align: center;
+}
+.list_01{
+    /* background-color: #cbffb2; */
+    width: 350px;
+    height: 500px;
+    float: left;
+    background: url(./image/list_01_background.jpg) no-repeat;
+}
+
+.list_01 dt{
+    letter-spacing: 10px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    font-style: bold;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #9db2ff;
+}
+.list_01 dd{
+    padding-bottom: 15px;
+    
+}
+.list_01 dd a{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+}
+.list_01 dd a:hover{
+    color: rgb(120, 120, 120);
+}
+
+/* 内容2 */
+.content2{
+    width: 1200px;
+    height: 330px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+}
+.list0{
+    width: 1200px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #0051ff;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+.list1, .list2, .list3, .list4{
+    width: 285px;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+}
+.list1, .list2, .list3{
+    padding-right: 20px;
+}
+.list1_img, .list2_img, .list3_img, .list4_img{
+    border-radius: 10px;
+    width: 285px;
+    height: 170px;
+}
+.list1_img a, .list2_img a, .list3_img a, .list4_img a{
+    font-size: 120px;
+    color: transparent;
+}
+.list1_img{
+    background: url(./image/list1_course.jpg) no-repeat;
+}
+.list2_img{
+    background: url(./image/list2_course.jpg) no-repeat;
+}
+.list3_img{
+    background: url(./image/list3_course.jpg) no-repeat;
+}
+.list4_img{
+    background: url(./image/list4_course.jpg) no-repeat;
+}
+.course1 h4, .course2 h4, .course3 h4, .course4 h4{
+    padding: 20px 10px 10px 10px;
+}
+.course1 p, .course2 p, .course3 p, .course4 p{
+    padding: 10px;
+    font-size: 13px;
+    color: rgb(172, 172, 173);
+}
+.course1, .course2, .course3, .course4{
+    width: 285px;
+    height: 130px;
+    background-color: #f4f4f4;
+}
+
+/* 内容3 */
+.content3{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ranking, .Q_A{
+    width: 600px;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+.ranking{
+    background: url(./image/ranking_background.jpg);
+}
+.ranking table caption{
+    width: 600px;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 8px;
+}
+.ranking table thead tr{
+    color: white;
+    background-color: #00b0fc;
+}
+.ranking table tbody tr td, .rangking_name{
+    color: white;
+}
+.ranking table tbody tr td:hover, .rangking_name:hover{
+    color: black;
+}
+.rangking_name{
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+}
+.ranking tr th{
+    height: 35px;
+    letter-spacing: 5px;
+}
+.ranking tr td{
+    height: 30px;
+}
+
+.Q_A{
+    background: url(./image/Q_A_background.jpg);
+}
+.Q_A .q_a1 dt{
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    background-color: #415081;
+}
+.Q_A .q_a1 dl dd{
+    margin-top: 28px;
+}
+.Q_A .q_a1 dd a{
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.Q_A .q_a1 dd a:hover{
+    color: silver;
+}
+.sidebar{
+    width: 1518px;
+    height: 136px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.sidebar_logo{
+    background-color: #f4f4f4;
+    width: 332px;
+    height: 106px;
+    padding-top: 30px;
+    text-align: center;
+    float: left;
+}
+.sidebar_logo #times{
+    font-size: 20px;
+    color: rgb(251, 104, 104);
+}
+
+.guide dl{
+    background-color: #f4f4f4;
+    width: 200px;
+    height: 126px;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    float: left;
+}
+.guide dt{
+    padding-top: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px blue solid;
+}
+.guide dd{
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    padding-left: 70px;
+    text-align: left;
+    background-color: white;
+}
+.guide .cv{
+    padding-left: 0px;
+    text-align: center;
+}
+.guide a{
+    text-decoration:none;
+    color: rgb(46, 44, 44);
+}
+.guide a:hover{
+    background-color: rgb(255, 216, 216);
+    cursor:pointer;
+}
+.contact dl{
+    background-color: #f4f4f4;
+    width: 300px;
+    height: 126px;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    float: left;
+}
+.contact dt{
+    padding-top: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px blue solid;
+}
+.contact dd{
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding-left: 70px;
+    font-size: 12px;
+    text-align: left;
+    background-color: white;
+}
+.contact #contact01{
+    padding-left: 90px;
+    color: rgb(120, 118, 118);
+}
+.contact #contact02{
+    padding-left: 90px;
+    color: rgb(120, 118, 118);
+}
+
+.way dl{
+    background-color: #f4f4f4;
+    width: 566px;
+    height: 120px;
+    float: left;
+}
+.way dt{
+    padding-top: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px blue solid;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.way dd{
+    float: left;
+}
+.way dd a{
+    background-color: white;
+}
+.go_top .top_img{
+    background-color: #f4f4f4;
+    width: 120px;
+	height:126px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    float: left;
+}

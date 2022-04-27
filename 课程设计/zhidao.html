@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧树入口</title>
+    <link rel="stylesheet" href="zhidao.css">
+    <link rel="icon" href="./image/icon.ico">
+</head>
+<body>
+    <div class="header">
+        <h1>东理精品课</h1>
+        <ul class="menu">
+            <li><a class="a5" href="./login.html">登录/注册</a></li>
+            <form action="./login.html" method="get" onsubmit="return user_center();">
+                <li><a class="a4"><input type="submit" value="用户中心" class="a44"></a></li>
+            </form>
+            <form action="#" method="post" onsubmit="return check();">
+                <li><a class="a3"><input type="text" name="search" class="a33" id="search" placeholder="输入课程或者老师名称"></a></li>
+                <li><a class="a2"><input type="submit" value="000" class="a22"></a></li>
+            </form>
+            <li><a class="a1" href="../index.html">首页</a></li>
+            <div class="nav1">
+                <a href="#" class="cont">菜单</a>
+                <div class="nav2">
+                    <a href="./mooc.html">慕课入口</a>
+                    <a href="./bilibili.html">b站入口</a>
+                    <a href="./chaoxing.html">学习通入口</a>
+                    <a href="./zhidao.html">智慧树入口</a>
+                </div>
+            </div> 
+        </ul>
+    </div>
+    <div class="zhidao">
+        <ul>
+            <div class="b1">
+                <ol>智慧树热门课程</ol>
+                <a href="https://www.zhihuishu.com/" title="智慧树网" target="blank">
+                <img src="./image/zhidao_logo.png"></a>
+            </div>
+
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000006196#teachTeam" target="blank"> &nbsp;形势与政策_国家级</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000006140#teachTeam" target="blank"> &nbsp;艺术与审美_国家级</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000006032#teachTeam" target="blank"> &nbsp;演讲与口才</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000006159#teachTeam" target="blank"> &nbsp;教育科学研究方法（基础）_国家级</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000006133#teachTeam" target="blank"> &nbsp;冲上云霄——飞机鉴赏</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000008269#teachTeam" target="blank"> &nbsp;定格身边的美-数码摄影攻略</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000006008#teachTeam" target="blank"> &nbsp;大学生劳动就业法律问题解读_国家级</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000010060#teachTeam" target="blank"> &nbsp;微信小程序开发</a></li>
+            <li>·<a href="https://coursehome.zhihuishu.com/courseHome/1000007430#teachTeam" target="blank"> &nbsp;创新创业与创客思维_国家级</a></li>
+        </ul>
+    </div>
+    <script>
+        function check(){
+            if (search.value.length==0) {
+                return false;
+            }
+            else{
+                alert('搜索成功~');
+                return true;
+            }
+        }
+
+        function user_center(){
+            alert('请先登录~');
+            return true;
+        }
+    </script>
+</body>
+</html>

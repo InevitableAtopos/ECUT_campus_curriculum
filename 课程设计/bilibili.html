@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b站入口</title>
+    <link rel="stylesheet" href="bilibili.css">
+    <link rel="icon" href="./image/icon.ico">
+</head>
+<body>
+    <div class="header">
+        <h1>东理精品课</h1>
+        <ul class="menu">
+            <li><a class="a5" href="./login.html">登录/注册</a></li>
+            <form action="./login.html" method="get" onsubmit="return user_center();">
+                <li><a class="a4"><input type="submit" value="用户中心" class="a44"></a></li>
+            </form>
+            <form action="#" method="post" onsubmit="return check();">
+                <li><a class="a3"><input type="text" name="search" class="a33" id="search" placeholder="输入课程或者老师名称"></a></li>
+                <li><a class="a2"><input type="submit" value="000" class="a22"></a></li>
+            </form>
+            <li><a class="a1" href="../index.html">首页</a></li>
+            <div class="nav1">
+                <a href="#" class="cont">菜单</a>
+                <div class="nav2">
+                    <a href="./mooc.html">慕课入口</a>
+                    <a href=".//bilibili.html">b站入口</a>
+                    <a href="./chaoxing.html">学习通入口</a>
+                    <a href="./zhidao.html">智慧树入口</a>
+                </div>
+            </div> 
+        </ul>
+    </div>
+    <div class="bili">
+        <ul>
+            <div class="b1">
+                <ol>b站热门课程</ol>
+                <a href="https://www.bilibili.com/" title="哔哩哔哩 (゜-゜)つロ 干杯~-bilibili" target="blank">
+                <img src="./image/bili_logo.png"></a>
+            </div>
+            <li>·<a href="https://www.bilibili.com/video/BV1Wa4y1e74u?spm_id_from=333.337.search-card.all.click" target="blank"> &nbsp;高等代数选讲-东华理工大学</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV1Lf4y1U7EA?spm_id_from=333.999.0.0" target="blank">《Web程序设计》课堂实录</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV1Eb411u7Fw?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank">《高等数学》同济版（宋浩老师）</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV1SJ411S7De?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank">【华中科技大学】《大学英语词汇解析》</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV17v411w78t?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank">【清华大学】C++教与学之论道开篇</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV1Vq4y1J75A?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank">【中国农业大学】微观经济学</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV1rE411r7Yq?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank">【电子科技大学】《通信原理》</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV12t4115735?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank"> &nbsp;判断推理《行测》系统课（全国通用）</a></li>
+            <li>·<a href="https://www.bilibili.com/video/BV1Z4411C7jG?spm_id_from=333.1098.mooc.secondary_floor_video.click" target="blank">【英语语法自学】英语语法从入门到高级</a></li>
+        </ul>
+    </div>
+</div>
+
+    <script>
+        function check(){
+            if (search.value.length==0) {
+                return false;
+            }
+            else{
+                alert('搜索成功~');
+                return true;
+            }
+        }
+
+        function user_center(){
+            alert('请先登录~');
+            return true;
+        }
+    </script>
+</body>
+</html>

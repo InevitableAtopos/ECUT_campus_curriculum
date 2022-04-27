@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="user_center.css">
+    <link rel="icon" href="./image/icon.ico">
+</head>
+<body>
+    <div class="header">
+        <h1>东理精品课</h1>
+        <ul class="menu">
+            <li><a class="a5" href="./login.html">登录/注册</a></li>
+            <form action="./login.html" method="get" onsubmit="return user_center();">
+                <li><a class="a4"><input type="submit" value="用户中心" class="a44"></a></li>
+            </form>
+            <form action="#" method="post" onsubmit="return check();">
+                <li><a class="a3"><input type="text" name="search" class="a33" id="search" placeholder="输入课程或者老师名称"></a></li>
+                <li><a class="a2"><input type="submit" value="000" class="a22"></a></li>
+            </form>
+            <li><a class="a1" href="../index.html">首页</a></li>
+            <div class="nav1">
+                <a href="#" class="cont">菜单</a>
+                <div class="nav2">
+                    <a href="./mooc.html">慕课入口</a>
+                    <a href=".//bilibili.html">b站入口</a>
+                    <a href="./chaoxing.html">学习通入口</a>
+                    <a href="./zhidao.html">智慧树入口</a>
+                </div>
+            </div> 
+        </ul>
+    </div>
+    <div class="content">
+        <div class="dt_0">
+            <img src="./image/resume_01.jpg" alt="">
+            <div class="dt_0_1">我的课程</div>
+            <div class="dt_0_1">我的收藏</div>
+            <div class="dt_0_1">课堂笔记</div>
+            <div class="dt_0_1">切换账号</div>
+            <div class="dt_0_1">退出登录</div>
+        </div>
+        <dl>
+            <dt>基本信息</dt>
+            <div class="dt1_1">
+                <dd class="dt1_1_1"><a href="">昵称： </a></dd>
+                <dd class="dt1_1_1"><a href="">用户名：</a> </dd>
+                <dd class="dt1_1_1"><a href="">性别： </a></dd>
+                <dd class="dt1_1_1"><a href="">年龄： </a></dd>
+                <dd class="dt1_1_1"><a href="">学号： </a></dd>
+                <dd class="dt1_1_1"><a href="">学习时长： </a></dd>
+                <dd class="dt1_1_1"><a href="">学习状态： </a></dd>
+            </div>
+            <div class="dt1_2">
+                <dd class="dt1_2_1">ASH_1111</dd>
+                <dd class="dt1_2_1">ECUT_ash@163.com</dd>
+                <dd class="dt1_2_1">男</dd>
+                <dd class="dt1_2_1">20 岁</dd>
+                <dd class="dt1_2_1">2020213399</dd>
+                <dd class="dt1_2_1">136h_12min</dd>
+                <dd class="dt1_2_1">正在学习中 · · ·</dd>
+            </div>
+        </dl>
+    </div>
+
+    <script>
+        function check(){
+            if (search.value.length==0) {
+                return false;
+            }
+            else{
+                alert('搜索成功~');
+                return true;
+            }
+        }
+
+        function user_center(){
+            alert('请先登录~');
+            return true;
+        }
+    </script>
+</body>
+</html>
